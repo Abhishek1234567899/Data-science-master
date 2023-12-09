@@ -1,15 +1,18 @@
-echo [$(data)]: "START"
+echo [$(date)]: "START"
 
-echo [$(data)]: "creating env with python 3.8 version"
+
+echo [$(date)]: "creating env with python 3.8 version" 
+
 
 conda create --prefix ./env python=3.8 -y
 
-echo [$(data)]:- "activating the environment"
+
+echo [$(date)]: "activating the environment" 
 
 source activate ./env
 
-echo[$(data)]: "installing the dev requirements"
+echo [$(date)]: "installing the dev requirements" 
 
 pip install -r requirements.txt
 
-echo [$(data)]:- "END"
+echo [$(date)]: "END" 
